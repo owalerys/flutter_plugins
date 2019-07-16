@@ -126,9 +126,6 @@ Future<void> signOutProviders() async {
 
 Future<dynamic> signOut(Iterable providers) async {
   return Future.forEach(providers, (p) async {
-    switch (p.providerId) {
-      case default:
-        break;
-    }
+    return;
   });
 }
